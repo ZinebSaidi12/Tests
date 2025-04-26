@@ -23,10 +23,3 @@ jobs:
       - name: Build and Test with Maven
         run: mvn -B clean verify # Combines both install and test phases
 
-      # Optional: Add test results reporting
-      - name: Upload Test Results
-        if: always() # Runs even if previous steps fail
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: target/surefire-reports
