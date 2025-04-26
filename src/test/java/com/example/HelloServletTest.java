@@ -2,7 +2,8 @@ package com.example;
 
 import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.Test;
-import javax.servlet.http.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 import java.io.*;
 
 public class HelloServletTest {
